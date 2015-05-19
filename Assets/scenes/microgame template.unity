@@ -305,7 +305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c4d6bb984f487849aea23e741b1dbad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: <Enter Microgame Message>
+  message: {fileID: 0}
+  displayTime: 0
 --- !u!1 &1590045716
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +398,7 @@ Canvas:
   m_GameObject: {fileID: 1793721612}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 2014045391}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
