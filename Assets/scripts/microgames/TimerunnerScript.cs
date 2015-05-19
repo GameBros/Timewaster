@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TimerunnerScript : MonoBehaviour {
-
-	public float time;
+public class TimerunnerScript : MonoBehaviour{
 
 	GameManager gameManager;
+
+	public float time;
 
 	// Use this for initialization
 	void Start () {

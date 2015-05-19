@@ -10,6 +10,8 @@ public class EaterScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (TouchHelper.TouchedScreen ()) {
+			GetComponent<Animator>().Play("eater_grab_anim");
+		}
 	}
 }
