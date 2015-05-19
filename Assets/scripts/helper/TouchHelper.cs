@@ -7,4 +7,8 @@ public class TouchHelper
 		return CrossPlatformInput.Touched()
 			&& gameObject.GetComponent<Collider2D> ().OverlapPoint (CrossPlatformInput.TouchPos());
 	}
+
+	public static bool TouchedScreen(){
+		return CrossPlatformInput.Touched();
+	}
 }
