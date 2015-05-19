@@ -14,7 +14,7 @@ public class game1Controller : MonoBehaviour {
 	void Start () {
 		guyCounter = guyRate;
 		guySequence = new bool[5];
-		int goodCounter;
+		int goodCounter = 3;
 		while( goodCounter < 3 )
 		{
 			for( int i = 0; i < 5; i++ )
