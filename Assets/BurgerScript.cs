@@ -6,8 +6,6 @@ public class BurgerScript : MonoBehaviour {
 	public Transform spawnPoint;
 	public GameObject eater;
 
-	private bool grabbed = false;
-
 	// Use this for initialization
 	void Start () {
 	
