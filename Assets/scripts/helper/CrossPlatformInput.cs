@@ -3,11 +3,11 @@ using System.Collections;
 
 public class CrossPlatformInput{
 
-	public static bool isTouching(){
+	public static bool Touched(){
 		if (Application.isEditor) {
-			return Input.GetMouseButtonDown (0);
+			return Input.GetMouseButtonUp (0);
 		} else {
-			return Input.touchCount > 0;
+			return Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended;
 		}
 	}
 
