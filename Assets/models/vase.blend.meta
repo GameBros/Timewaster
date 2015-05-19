@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 021e5b32da18d7140b75ca67c93c9e25
-timeCreated: 1431821579
+guid: c3ed171b12b2ff5419705a46a6944444
+timeCreated: 1432039171
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Icosphere
+    4300000: Circle_001
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -51,7 +51,7 @@ ModelImporter:
     splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
