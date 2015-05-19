@@ -12,7 +12,7 @@ public class game1BlueGuyControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		transform.Translate(Vector3.right*moveSp);
+		transform.Translate(Vector3.right*moveSp, Space.World);
 		transform.Rotate(new Vector3(0,0,1)*rotateSp);
 	}
 }
