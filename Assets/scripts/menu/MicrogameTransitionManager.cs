@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class MicrogameTransitionManager
 {
+
+	public GameObject timeRunner;
+
 	//Game Pots
-	private string[] gamePot01 = new string[]{"microgame_01"};
+	private string[] gamePot01 = new string[]{"microgame_01","microgame_02"};
 	private string[][] gamePots;
 
 	private int currentMicrogameInPot;
@@ -20,9 +23,9 @@ public class MicrogameTransitionManager
 	public void StartGamePot (int index)
 	{
 		currentPot = index;
-		currentMicrogameInPot = 0;
+		currentMicrogameInPot = -1;
 
-		Application.LoadLevel (gamePots [currentPot] [currentMicrogameInPot]);
+		NextMicrogame ();
 	}
 
 	public void NextMicrogame(){
@@ -32,7 +35,6 @@ public class MicrogameTransitionManager
 		} else {
 			currentPot = -1;
 			currentMicrogameInPot = -1;
-
 			gameManager.FinishGamePot();
 		}
 	}
