@@ -463,6 +463,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSp: .0299999993
   rotateSp: 3
+  goodGuy: 1
+  ashParticles: {fileID: 194004, guid: 65472a7e6d7b8254ea18d1b9d622f83c, type: 2}
 --- !u!137 &13768146
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
