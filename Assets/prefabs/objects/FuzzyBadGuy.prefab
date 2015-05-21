@@ -651,11 +651,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 192738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc7a9dff829f3a45a3099e713b8de37, type: 3}
+  m_Script: {fileID: 11500000, guid: 44ddf67c41075f94face96a0d3f75f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSp: .0299999993
-  rotateSp: 0
+  moveSp: .0500000007
+  rotateSp: .0500000007
   goodGuy: 0
   ashParticles: {fileID: 194004, guid: 65472a7e6d7b8254ea18d1b9d622f83c, type: 2}
 --- !u!137 &13720972
