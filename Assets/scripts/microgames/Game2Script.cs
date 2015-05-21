@@ -5,6 +5,7 @@ public class Game2Script : MonoBehaviour {
 
 	public Transform burgerMachine;
 	public Transform burger;
+	public ParticleSystem burgerProduceEffect;
 	public float burgerWaitTime;
 	public float burgerGravity;
 
@@ -26,7 +27,9 @@ public class Game2Script : MonoBehaviour {
 
 	void ProduceBurger ()
 	{
+		burgerProduceEffect.Play ();
 		burgerMachine.GetComponent<Animator> ().Play ("burgermachine_produce");
+		burgerMachine.GetComponent<AudioSource> ().Play ();
 		burger.GetComponent<SpriteRenderer> ().enabled = true;
 		burger.GetComponent<Rigidbody2D> ().gravityScale = burgerGravity;
 	}

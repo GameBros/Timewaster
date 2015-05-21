@@ -4,6 +4,7 @@ using System.Collections;
 public class EaterScript : MonoBehaviour {
 
 	Animator anim;
+	public ParticleSystem burgerCrumbs;
 
 	// Use this for initialization
 	void Start () {
@@ -17,5 +18,10 @@ public class EaterScript : MonoBehaviour {
 				anim.Play("eater_grab_anim");
 			}
 		}
+	}
+
+	public void PlayMampf(){
+		GetComponent<AudioSource> ().Play ();
+		burgerCrumbs.Play ();
 	}
 }
